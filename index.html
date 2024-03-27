@@ -2,20 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/winterx.svg" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link rel="icon" href="/pxb.winterx/assets/favicon-57715952.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/pxb.winterx/assets/apple-touch-icon-f4ab6153.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEXUlEQVRYR81XWSh9axRfZIySeXqRKJkfZEhIGUumjBkzPLjhAS+uebwlPHBvyZBZohTKTKGMTyQSD0rhmpMHD4a7f6vOuedc2zlukv+qr73b39rr+32/9Vvr21vl7e1NlYhKhPGbMEyFoSKM77Q3IfjfwvhLGHUqAoAy4ab6O1dUELsEAIDG5IcAnAEAKPkpe/tpAPTrAZiamqKGhgZOSUdHB9na2oqm5+LighISEniusbGR3NzcRP1OTk4oPT2d5/Lz8yk6OlrO7x0De3t75OTkxE7t7e2UnZ0tGri3t1cauKysjKqrxQupv7+fUlNTOcbGxgZ5eHgoBvD6+komJiZ0c3NDaWlp1NPTIwogMTGRhoeHec7d3Z02NzdF/XJycqitrY10dXXp9vaW1NXVFQPAbGRkJI2Pj5ONjQ0dHR29C/zy8kKmpqYMEqaqqkqXl5dkaGj4ztfV1ZV2dnYoMDCQ5ubm3s2LirC5uZkKCwvZGbnGYrIGKr28vEhTU5OsrKzo8PCQ2YiPj5fze3h4IH19fQKrNTU1VFpa+jkA29vbTCtsbGyMoqKi5F6sqKjgnCOf0EtnZydlZGRQV1eXnN/8/DwFBQXxs+XlZfL19f0cgOfnZ0b++PjITEDlsoaFt7a2CEDs7e1555aWlnR6ekoqKv8eJVVVVVRZWclM3d/fk5aW1ucAwCskJIRmZ2fJ09OT1tfXpS9eXV2RmZkZ0woQ0ImxsTFBF6ggBwcHqW9wcDDn3cfHh1ZWVt4tjgcfNqK6ujrOmYaGBqPX1tbmAENDQ5SUlMS6ODs7YwF6e3vT2toaNTU1UUFBAfsBkIGBAUEHJSUlVFtb+/8ArK6uSnMmm7+UlBQaGBjgHtDd3c1BIbDy8nLCjmdmZvjZ7u4uubi48D2YlGjhvyg+ZODp6Yl1gGt9fT0VFxcz7ebm5lxyo6OjFBMTw/EkogVLKE1cUfvoAWpqanR3d8d9QMwUngV+fn6cu7CwMJqcnJQuhGYCLejp6XFMAIMu8AwMgAk0sb6+PoVNSqEGMIkWi9whlwgOXYBqf39/WlpaktuQJDXQALSAM+T4+Fi0imRfVMgAFIzdwPb39ykrK4vFhrKUNCpJsMHBQUpOTiZHR0daXFyUNi901PDwcFH6lTKAPgAdoC/g8MnMzOT7g4MDsrOzkwsqW54jIyMUFxfHFYLnYPAjU/o9IGk6AQEBtLCwQNbW1kytbMORBEf3hCBDQ0NpenqanJ2d+RxQZEoBFBUVcU6xG4gtLy+PWlpaRGNCHyhJiW9ubi61trZ+DcDExARFRERIg0hULhYV+kBTkhhSERsb+zUAOMONjIwI3646Ojp0fX0t2tOxCvSBbwnUPez8/JzL80spwMtoOPi0whGsjFJUBzqnhYUFgT1lplQDygJ8df6XAPAq7OK7/wc/Iop/TM6FWcVK+SrPH79/DgD4UKv5vjUURi4FAPye/y4M/J6Die9OB/5FL4TxpzD++AeaHTqFLmhWDAAAAABJRU5ErkJggg=="
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABvElEQVQ4T6WTvavBURjHv5R7B5u3QTJaKDYWSbIYDMqmsFkMXkrd4Q5yk81LSQYs/gEppWSVKFKMDEwkg+FK+t3fecqve7q323XvqafOy/N8nm/ne45MEIRXAC9iPIvxyLiIyW8yEcAmT49Ufsq9MIDwx2IqkwDJZBLX6xWVSkXisb3T6YRGoyHtJRIJ3G43lMtlHlCr1VAoFLBer+mACTMYDDifzzgcDlAoFLRvMpkQj8cpOAXL5RJmsxm73Q56vR7z+RwulwtqtRqtVgtOpxP7/R46nQ6z2QxWq5UHsI7ssFqtIhgMkprxeAyNRgOtVotcLodOp4NIJEKK5HI5D2CrQCAAo9GIYrEIt9uNUCgElUqFfD5PsEwmg9VqRaD74Fxghe12G4PBgLpuNhsolUpStt1uqYHf70c6nf4eMJ1O4XA40Gw2ScVkMqFEpiYajSIWi2E4HMJut38PYPYwyRaLBR6PB9lslhLZfXS7Xbq84/EoOcK5cEf6fD70ej2MRiOpE3PEZrPB6/Wi3+9z7+7LSyyVSqjX61gsFtJNM4eYbeFwGKlU6mcAd/qLBVPwLuY9+hPvaPpM//rOH0DZ4L+T9QvMAAAAAElFTkSuQmCC"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
     />
     <title>Winterx</title>
-    <script
-      type="module"
-      crossorigin
-      src="/pxb.winterx/assets/index-f1e492b8.js"
-    ></script>
+    <script type="module" crossorigin src="/pxb.winterx/assets/index-755515d1.js"></script>
   </head>
   <body style="margin: 0">
     <div id="app"></div>
+    
   </body>
 </html>
